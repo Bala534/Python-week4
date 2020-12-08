@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PlantServoBot</title>
+        <meta lang="en" charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+            integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="icon" type="image/png" href="https://github.com/Bala534/Python-week3/blob/main/plantservoapp/static/assets/icon.png?raw=true">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}"></link>
+    </head>
+
+
+    <body>
+
+        <div class="head">
+            <img class="logo" src="https://github.com/Bala534/Python-week3/blob/main/plantservoapp/static/assets/vishnulogo.png?raw=true"><br>
+            <h1>!!!! Hello VITians !!!!</h1>
+            <h2>I am PlantServo Bot</h2>
+            <marquee><b class='sp'>Let us chat for more info about plantation.</b></marquee>
+        </div>
+
+        <main id="chat">
+            <main class="container">
+                {% block content %}{% endblock %}
+            </main>    
+        </main>
+        
+        <script type="text/javascript" src="{{ url_for('static',filename='js/todo.js') }}"></script>
+    </body>
+</html>

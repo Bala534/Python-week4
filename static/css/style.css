@@ -1,0 +1,116 @@
+body{
+    background: url("https://wallup.net/wp-content/uploads/2017/03/27/435877-black_background-simple-digital_art-plants-leaves-green-minimalism.jpg") no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.head{
+    text-align:center;
+    width:95%;
+    background-color:rgba(21, 7, 222,0.7);
+    border:2px white solid;
+    margin:auto;
+    border-radius:20px;
+    font-weight:bold;
+    color:white;
+    animation: myanimation 2s infinite;
+    margin-top:3%;
+    box-shadow: 10px 10px rgba(247, 245, 245,0.7);
+}
+  
+@keyframes myanimation {
+    0% {background-color: rgba(224, 7, 24,0.7);}
+    25%{background-color:rgba(21, 7, 222,0.7);}
+    50%{background-color:rgba(222, 7, 211,0.7);}
+    100% {background-color: rgba(232, 69, 9,0.7);}
+}
+
+.logo{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    margin:auto;
+    margin-top:20px;
+}
+
+#chat{
+    background-image:url('https://github.com/Bala534/Python-week3/blob/main/plantservoapp/static/assets/bg.png?raw=true');
+    width:80%;
+    margin:auto;
+    font-size: 20px;
+    font-weight: bold;
+    border:2px white solid;
+    border-radius: 50px;
+    margin-top:30px;
+
+    background-size: cover;
+}
+
+.msg{
+    display:flex;
+    padding:10px;
+}
+
+.content{
+    padding:10px 20px;
+    border-radius : 50px;
+    margin:0 10px;
+}
+
+.bot .content{
+    border-top-left-radius:0px;
+    background-color: rgba(255,255,255,0.8);
+    width:50%;
+}
+
+.bot::before{
+    content:'';
+    width:70px;
+    height:70px;
+    border-radius:50px;
+    background-image: url('https://github.com/Bala534/Python-week3/blob/main/plantservoapp/static/assets/bot.png?raw=true');
+    background-size: cover;
+}
+
+.msg.user{
+    justify-content:flex-end;
+}
+
+.user .content{
+    border-top-right-radius:0px;
+    background-color: rgba(255,255,100,0.8);
+}
+
+.user::after{
+    content:'';
+    width:70px;
+    height:70px;
+    border-radius:50px;
+    background-image: url('https://github.com/Bala534/Python-week3/blob/main/plantservoapp/static/assets/user.png?raw=true');
+    background-size: cover;
+}
+
+.label{
+    text-transform: capitalize;
+    font-weight:500;
+    margin-right: 10px;
+}
+
+.form{
+    min-width:150px;
+    display:block;
+    text-align: right;
+}
+
+.bot .content img{
+    width:300px;
+    height:300px;
+}
+
+.bot .content iframe{
+    width:300px;
+    height:300px;
+}
+
+.sp{
+    color: black;
+}

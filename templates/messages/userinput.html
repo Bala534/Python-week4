@@ -1,0 +1,9 @@
+{% extends 'messages/userbase.html' %}
+
+{% block content %}
+<div class="d-flex align-items-center form">
+    <span class="label">{{question.key}}</span>
+    <input type="text" id="userinput" class="form-control">
+    <button class="btn" id="sendbutton" onclick="send_response('{{question.key}}')"><i class="far fa-paper-plane"></i></button>
+</div>
+{% endblock %}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+    body{
+      background-image:url('https://www.pixelstalk.net/wp-content/uploads/2016/04/Tree-wallpaper-art-free-download.jpg');
+	    color:white;
+    }
+    #left{
+	    margin-left: 120px;
+	    margin-top: 190px;
+	    font-family: 'Roboto', sans-serif;
+	    letter-spacing: 2px;
+    }
+    #right{
+	    background-color: white;
+	    height: 350px;
+	    width: 400px;
+	    margin-left: 650px;
+	    margin-top: -200px;
+	    border-radius: 10px;
+	    text-align: center;
+    }
+    input[type="text"]{
+	    margin-top: 20px;
+	    padding: 15px 0px 15px 0px;
+	    width: 350px;
+	    border:1px solid lightgrey;
+	    border-radius: 5px;
+    }
+    ::placeholder{
+	    color:grey;
+	    opacity: 1;
+    	padding-left: 20px;
+	    letter-spacing: 0.5px;
+	    font-size: 15px;
+    }
+    input[type="password"]{
+	    margin-top: 10px;
+	    padding: 15px 0px 15px 0px;
+	    width: 350px;
+	    border:1px solid lightgrey;
+	    border-radius: 5px;
+    }
+    #butt{
+	    margin-top: 10px;
+	    color:white;
+	    font-size: 18px;
+	    padding: 15px 0px 15px 0px;
+    	width: 350px;
+	    border:1px solid lightgrey;
+	    border-radius: 5px;
+	    transition: 0.5s;
+	    background-color: #FFA60A;
+ 	    box-reflect: below 1px linear-gradient(transparent,#0005)
+    }
+    #butt:hover {
+        background-color: #03e9f4;
+        color: #050801;
+        box-shadow: 0 0 5px #03e9f4;
+    }
+    #butt1{
+	    margin-top: 5px;
+	    color:white;
+	    font-size: 18px;
+	    padding: 15px 0px 15px 0px;
+	    width: 150px;
+	    border:1px solid lightgrey;
+	    border-radius: 5px;
+	    background-color: black;
+      cursor:pointer;
+    }
+  </style>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+	<title></title>
+</head>
+<body>
+	<div id="left">
+		<h1 style="color:grey;">The Plant Servo <span style="color:black">Bot</span></h1>
+		<h4 style="font-size: 20px;letter-spacing: 2px;color:#2D849D">
+      This is a chatbot for plant information
+      <br>like soil,water,days to grow etc 
+      <br>and many more..
+    </h4>
+	</div>
+
+	<div id="right">
+		<form method="post">
+			<input type="text" name="email" placeholder="Email address or phone number">
+			<br>
+			<input type="password" name="password" placeholder="Password">
+			<br><br>
+			<button id="butt">Log In</button>
+		</form>
+		<br>
+		<a href="" style="text-decoration: none;color:#1778F2;font-weight: bold;">Sign in as guest</a>
+		<br>
+		<br>
+		<hr style="width: 350px;color:grey;">
+		<a href={{url_for("home")}}><button id="butt1">Signup</button></a>
+	</div>
+</body>
+</html>

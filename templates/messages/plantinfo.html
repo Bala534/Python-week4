@@ -1,0 +1,20 @@
+{% extends 'messages/botbase.html' %}
+{% block content %}
+    {% if plantinfo=='soil' %}
+        <p>{{data[plantname][plantinfo]}}</p>
+        <img src={{data[plantname].soilimg}}>
+
+    {% elif plantinfo=='water' %}
+        <p>{{data[plantname][plantinfo]}}</p>
+        <img src={{data[plantname].waterimg}}>
+
+    {% elif plantinfo=='how' %}
+        <p>Please watch this video for more info!!!!</p>
+        <iframe src={{data[plantname].vid}} frameborder="0" allowfullscreen></iframe>
+
+    {% elif plantinfo=='days' %}
+        <p>{{data[plantname][plantinfo]}}</p>
+        <img src={{data[plantname].daysimg}}>
+    {% endif %}
+    
+{% endblock %}
