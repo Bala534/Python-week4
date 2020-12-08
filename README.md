@@ -2,6 +2,10 @@
 
 <img src='https://narrowgarden.files.wordpress.com/2020/03/chatbot.png?w=1024'>
 
+<h2>Description</h2>
+
+This chatbot is a plantservo bot which gives the plant information like soil,water,how to grow and days to grow....
+
 <h1>Team Members</h1>
 
 <ul>
